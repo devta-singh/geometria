@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Generación de Espirales</title>
+</head>
+<body>
+	<!--#contenido#-->
+	<form action="espiral_conica_v02.php" method="post">
+		Orientación<br>
+		<label for="signo-1"></label><input type="radio" id="signo-1" name="signo" value="-1"/ checked>  Cono natural, punta hacia arriba
+		<br>
+		<label for="signo1"></label><input type="radio" id="signo1" name="signo" value="1"/> Cono inestable, punta hacia abajo
+		<br>
+		<br>
+		Origen y Centro<br>
+		<label for="centroX">Centro X</label><input id="centroX" name="centroX" value="0"/><br>
+
+		<label for="centroY">Centro Y</label><input id="centroY" name="centroY" value="0"/><br>
+
+		<label for="centroZ">Centro Z</label><input id="centroZ" name="centroZ" value="0"/><br>
+		<br>
+		Dimensiones<br>
+		<label for="diametro">diametro</label><input id="diametro" name="diametro_base" value="31"/><br>
+
+		<label for="altura_cono">altura</label><input id="altura_cono" name="altura_cono" value="39"/><br>
+
+		<br>		
+		Espiral<br>
+		<label for="numero_de_vueltas">numero de vueltas</label><input id="numero_de_vueltas" name="numero_de_vueltas" value="11"/><br>
+
+		<label for="puntos_por_vuelta">numero de puntos por vuelta</label><input id="puntos_por_vuelta" name="puntos_por_vuelta" value="12"/><br>
+
+		<br>
+		Precisión<br>
+		<label for="decimales">decimales</label><input id="decimales" name="decimales" value="4"/><br>
+
+		<br>
+		Separador<br>
+		<label for="separador">separador</label><input id="separador" name="separador" value=", "/><br>
+
+		<br>
+		Exportación:<br>
+		<label for="fichero_csv">nombre fichero csv</label><input id="fichero_csv" name="fichero_csv" value="espiral_csv.csv"/><br>
+
+		<label for="fichero_macro">nombre fichero macro rhino</label><input id="fichero_macro" name="fichero_macro" value="macro_rhino3d.txt"/><br>
+
+		
+		<input type="submit" name="generar" value="Generar"/><br>
+	</form>
+</body>
+</html>
